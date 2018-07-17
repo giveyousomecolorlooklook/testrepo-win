@@ -13,7 +13,6 @@ for i in range(1,253,1):
     print(ip)
     os.system("ping -n 1 "+ip)
 
-
 output = os.popen('arp -a')
 arplist = output.read()
 result = re.findall(r'.*2c-27-d7-3c-b5-65.*',arplist)
